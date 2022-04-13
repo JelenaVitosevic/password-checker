@@ -104,11 +104,12 @@ td {
     #input {
         margin: 0 auto;
         margin-bottom: 0.625rem;
+        width: 70%;
     }
 
     #button {
         margin: 0 auto;
-        width: 40%;
+        width: 70%;
     }
 
     table {
