@@ -1,54 +1,121 @@
-.form {
-    margin-top: 0.625rem;
+html {
+    background-color: #891dbb;
+    background-image: linear-gradient(to bottom right, #5e71df, #891dbb);
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    min-height: 100%;
+    min-width: 300px;
+    overflow-x: hidden;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-.label {
-    font-weight: 600;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    font-style: normal; 
+.content_title {
+    text-align: center; 
     padding: 0.625rem;
+    margin: 4% 0;
+}
 
+.input_content {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 #input {
+    background-color: #fff;
+    color: #7b2cbf;
     border-radius: 0.375rem;
-    border: 1px solid #999999;
-    padding: 0.625rem;
+    border: 2px solid #7b2cbf;
     margin: 0.625rem;
+    padding: 0.625rem;
+    width: 40%;
     font-weight: 600;
     font-size: 0.875rem;
-    line-height: 1.25rem;
-    font-style: normal;
+}
+
+#input:focus {
+    outline: none;
 }
 
 #button {
-    background-color: #FAB500;
+    color: #fff;
+    background-color: #5a189a;
     border-radius: 0.375rem;
-    border:  1px solid #999999;
-    padding: 0.625rem 7.75rem 0.625rem 7.8125rem;
+    border:  2px solid #5a189a;
+    margin: 0.625rem 0;
+    padding: 0.625rem 0;
+    width: 15%;
     font-weight: 600;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    text-transform: uppercase;
     font-style: normal;
     cursor: pointer;
 }
 
-table, th, td {
-    border: 1px solid #999999;
-    border-collapse: collapse;
-  }
-
-th {
-    background-color: #FAB500;
-    padding: 0.625rem;
+#button:hover {
+    background-color: #fff;
+    border: 2px solid #fff;
+    color: #7b2cbf;
 }
 
-td {
-    padding: 0.625rem;
-    text-align: center;
+.table_wrapper {
+    padding: 0.625rem 0;
 }
 
 table {
-    margin: 0.625rem;
+    margin: 0 auto;
+    width: 50%;
 }
+
+table, th, td {
+    border: 3px solid #5a189a;
+    border-collapse: collapse;
+    height: 8vh;
+    padding: 0.625rem;
+  }
+
+th {
+    background-color: #5a189a;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+td {
+    background-color: #fff;
+    color: #5a189a;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1010px) {
+    table, th, td {
+        font-size: 12px;
+        height: 5vh;
+        padding: 0.225rem;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .input_content {
+        flex-direction: column;
+    }
+
+    #input {
+        margin: 0 auto;
+        margin-bottom: 0.625rem;
+    }
+
+    #button {
+        margin: 0 auto;
+        width: 40%;
+    }
+
+    table {
+        width: 70%;
+    }
+} 
+    
+
+
+
