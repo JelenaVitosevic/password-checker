@@ -9,22 +9,23 @@ function passwordChecker () {
     let sumCar = 0;
     for (i=0; i < password.length; i++) {
         if (upperCases.test(password[i])) {
-            sumUpperCases = sumUpperCases + 1;
+            sumUpperCases++;
         }
         else if (lowerCases.test(password[i])) {
-            sumLowerCases = sumLowerCases +1;
+            sumLowerCases++;
         }
         else if (nums.test(password[i])) {
-            sumNums = sumNums +1;
+            sumNums++;
         }
         else {
-            sumCar = sumCar +1;
+            sumCar++;
         }
     }
-    document.getElementById('upp').textContent = sumUpperCases;
-    document.getElementById('lower').textContent = sumLowerCases;
-    document.getElementById('num').textContent = sumNums;
-    document.getElementById('car').textContent = sumCar;
+    const col = document.getElementsByClassName('col');
+    col[0].textContent = sumUpperCases;
+    col[1].textContent = sumLowerCases;
+    col[2].textContent = sumNums;
+    col[3].textContent = sumCar;
 }
 
 const mojButton = document.getElementById('button');
