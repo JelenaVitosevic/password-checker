@@ -1,0 +1,29 @@
+{
+  "name": "password_strength_checker",
+  "version": "1.0.0",
+  "description": "This is my first task in MQ Soft.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JelenaVitosevic/password-checker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JelenaVitosevic/password-checker/issues"
+  },
+  "homepage": "https://github.com/JelenaVitosevic/password-checker#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3"
+  }
+}
